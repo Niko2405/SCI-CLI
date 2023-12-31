@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>SCI_CLI</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <StartupObject>SCI_CLI.Program</StartupObject>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <Title>SCI-CLI</Title>
+    <Copyright>niko2405</Copyright>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="app.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="SCI-Logger">
+      <HintPath>..\..\..\SCI-Logger\src\SCI-Logger\bin\Release\net8.0\SCI-Logger.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
