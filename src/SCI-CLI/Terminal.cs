@@ -71,7 +71,7 @@ namespace SCI_CLI
 						Console.ForegroundColor = ConsoleColor.Red;
 						Console.Write(code);
 					}
-					else if (code == ',')
+					else if (code == ',' || code == ' ')
 					{
 						SetDefaultColors();
 						Console.Write(code);
@@ -79,11 +79,6 @@ namespace SCI_CLI
 					else if (code == '\n')
 					{
 						Console.WriteLine();
-					}
-					else if (code == ' ')
-					{
-						SetDefaultColors();
-						Console.Write(' ');
 					}
 				}
 				Thread.Sleep(50);
