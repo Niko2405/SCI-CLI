@@ -22,8 +22,8 @@ namespace SCI_CLI
 			{
 				Logging.Info($"Connecting to {Data.ServerIP}:{Data.ServerPort}");
 				IPAddress ipAddress = IPAddress.Parse(Data.ServerIP);
-				IPEndPoint remoteEndPoint = new IPEndPoint(ipAddress, Data.ServerPort);
-				Socket sender = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+				IPEndPoint remoteEndPoint = new(ipAddress, Data.ServerPort);
+				Socket sender = new(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 				try
 				{
 					sender.Connect(remoteEndPoint);

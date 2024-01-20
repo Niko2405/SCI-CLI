@@ -11,6 +11,7 @@
     <Title>SCI-CLI</Title>
     <Copyright>niko2405</Copyright>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PublishAot>True</PublishAot>
   </PropertyGroup>
 
   <ItemGroup>
